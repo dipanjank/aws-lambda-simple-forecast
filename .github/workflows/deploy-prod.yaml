@@ -1,8 +1,8 @@
 name: test
 on:
-  push:
-    branches-ignore:
-      - master
+  release:
+    types:
+      - published
 
 jobs:
   test:
@@ -17,4 +17,4 @@ jobs:
       - run: |
           pip install -r requirements-dev.txt
           pytest -vs tests/
-
+          chalice deploy --stage prod
