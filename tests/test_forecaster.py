@@ -1,7 +1,7 @@
-from forecaster import make_forecast
+from forecaster import average_forecast
 
 
-def test_constant_forecast():
+def test_average_forecast():
     train_data = [
         {
             'date': f'2020-01-{str(n).zfill(2)}',

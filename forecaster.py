@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def make_forecast(data_dict):
+def average_forecast(data_dict):
     """
     Take daily data and return the average of the training data as forecast from
     ``data_dict['start_date']`` and ``data_dict['end_date']``. Dates expected in YYYY-MM-DD
