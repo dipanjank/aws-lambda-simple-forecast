@@ -21,8 +21,4 @@ def test_constant_forecast():
         'data': 10.0
     } for n in range(1, 29+1)]
 
-    from pprint import pprint
-    pprint(expected)
-    pprint(actual)
-
     assert expected == actual
