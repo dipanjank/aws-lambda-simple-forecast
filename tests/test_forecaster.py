@@ -15,7 +15,7 @@ def test_average_forecast():
         'start_date': '2020-02-1',
         'end_date': '2020-02-29'
     }
-    actual = make_forecast(data_dict)
+    actual = average_forecast(data_dict)
     expected = [{
         'date': f'2020-02-{str(n).zfill(2)}',
         'data': 10.0
