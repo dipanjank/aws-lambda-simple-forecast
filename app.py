@@ -2,8 +2,6 @@ import json
 
 from chalice import Chalice
 
-from forecaster import average_forecast
-
 app = Chalice(app_name='avg_forecaster')
 
 

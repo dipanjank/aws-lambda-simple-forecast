@@ -1,4 +1,4 @@
-from forecaster import average_forecast
+from chalicelib.forecaster import average_forecast
 
 
 def test_average_forecast():
@@ -12,7 +12,7 @@ def test_average_forecast():
 
     data_dict = {
         'train_data': train_data,
-        'start_date': '2020-02-1',
+        'start_date': '2020-02-01',
         'end_date': '2020-02-29'
     }
     actual = average_forecast(data_dict)
