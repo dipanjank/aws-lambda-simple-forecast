@@ -8,12 +8,16 @@
   "stages": {
     "dev": {
       "environment_variables": {
-        "STAGE": "dev"
+        "STAGE": "dev",
+        "INPUT_BUCKET": "forecast_in",
+        "OUTPUT_BUCKET": "forecast_in"
       }
     },
     "prod": {
       "environment_variables": {
-        "STAGE": "prod"
+        "STAGE": "prod",
+        "INPUT_BUCKET": "forecast_in",
+        "OUTPUT_BUCKET": "forecast_in"
       }
     }
   }
