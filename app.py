@@ -26,6 +26,7 @@ def simple_forecast_async(event):
     s3_client = boto3.client('s3')
     file_obj = s3_client.get_object(Bucket=event.bucket, Key=event.key)
     content = file_obj['Body'].read().decode('utf-8')
+    app.log.info(f"Processing: {content}")
     forecast_data = json.loads(content)
 
     # Make a forecast
