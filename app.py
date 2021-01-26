@@ -35,5 +35,5 @@ def simple_forecast_async(event):
     # Write the result to the output bucket
     out_bucket = os.environ['OUTPUT_BUCKET']
     output_key = event.key.replace('.json', '.results.json')
-    s3_client.put_object(Key=output_key, Bucket=out_bucket, body=result_str.encode('utf-8'))
+    s3_client.put_object(Key=output_key, Bucket=out_bucket, Body=result_str.encode('utf-8'))
 
