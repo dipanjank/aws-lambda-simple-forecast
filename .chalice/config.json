@@ -10,14 +10,14 @@
       "environment_variables": {
         "STAGE": "dev",
         "INPUT_BUCKET": "forecast-in-dev",
-        "OUTPUT_BUCKET": "forecast-in-dev"
+        "OUTPUT_BUCKET": "forecast-out-dev"
       }
     },
     "prod": {
       "environment_variables": {
         "STAGE": "prod",
         "INPUT_BUCKET": "forecast-in-prod",
-        "OUTPUT_BUCKET": "forecast-in-prod"
+        "OUTPUT_BUCKET": "forecast-out-prod"
       }
     }
   }
