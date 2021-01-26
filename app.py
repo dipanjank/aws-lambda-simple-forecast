@@ -23,7 +23,7 @@ def simple_forecast_async(event):
         raise ValueError(f'Expecting a json file, instead got: {event.key}')
 
     # Read the file from S3
-    s3_client = boto3.get_client('s3')
+    s3_client = boto3.client('s3')
     file_obj = s3_client.get_object(Bucket=event.bucket, Key=event.key)
     content = file_obj['Body'].read().decode('utf-8')
     forecast_data = json.loads(content)
