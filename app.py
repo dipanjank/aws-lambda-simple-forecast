@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 
 import boto3
@@ -7,6 +8,7 @@ from chalice import Chalice
 from chalicelib.forecaster import average_forecast
 
 app = Chalice(app_name='avg_forecaster')
+app.log.setLevel(logging.DEBUG)
 
 
 @app.route('/forecast', methods=['POST'])
